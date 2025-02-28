@@ -1,8 +1,8 @@
 pipeline {
     agent any
-    tools {
-        maven 'Maven 3'
-    }
+    // tools {
+    //     maven 'Maven 3'
+    // }
     environment {
         SONAR_URL = 'http://34.27.111.131:9000'
         SONAR_TOKEN = credentials('sonar-token')  // Add this in Jenkins credentials
