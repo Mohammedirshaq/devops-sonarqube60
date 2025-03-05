@@ -36,7 +36,7 @@ pipeline {
                     timeout(time: 2, unit: 'MINUTES') {
                         def qualityGate = waitForQualityGate()
                         if (qualityGate.status != 'OK') {
-                            error "❌ Quality Gate failed! Code coverage must be greater than 70%."
+                            error "Quality Gate failed! Code coverage must be greater than 70%."
                         }
                     }
                 }
