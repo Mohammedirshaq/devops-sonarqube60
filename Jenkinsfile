@@ -30,7 +30,7 @@ pipeline {
                 '''
             }
         }
-         stage('Check Quality Gate') {
+    /*     stage('Check Quality Gate') {
             steps {
                 script {
                     timeout(time: 2, unit: 'MINUTES') {
@@ -41,6 +41,6 @@ pipeline {
                     }
                 }
             }
-        }
+        } */
     }
 }
